@@ -1,0 +1,26 @@
+# Access Account Names
+
+region                      = "us-east-1"
+firewall_image              = "Palo Alto Networks VM-Series Next-Generation Firewall (BYOL)"
+fw_iam_role                 = "aviatrix-role-ec2" ## Whatever role you choose assumes you have S3 ready only access to new buckets, and assume role
+fw_bootstrap_bucket         = "" ## firewall bucket suffix for bootstrap
+aviatrix_firenet_vpc_name   = ""
+aviatrix_tgw_name_primary   = ""
+aviatrix_tgw_name_secondary = ""
+custom_egress_cidr_azA      = ""
+custom_egress_cidr_azB      = ""
+
+# Do you want your firewall attached to Aviatrix Firenet Gateways?
+aviaxtrix_attachment_map = {
+  fw1 = true
+  fw2 = true
+  # Add more key/values if you want to have more firewalls than just 2
+}
+
+#Bootstrapping Requirements
+panorama_ip                  = ""
+panorama_vm_auth_key         = ""
+panorama_template_stack      = ""
+panorama_template_stack_ha   = ""
+panorama_device_group_name_1 = ""
+panorama_device_group_name_2 = ""

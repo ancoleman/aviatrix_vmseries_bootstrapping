@@ -4,7 +4,7 @@ Assumptions:
 * Multi-Region Deployment
 * Aviatrix Environment has already been deployed
 * Proper AWS and Aviatrix access has been granted
-* Panorama is accessible via security groups and routing
+* Panorama is built and accessible via security groups and routing, your device groups and templates are pre-staged.
 
 Requirements:
 * Terraform Version 0.12.29
